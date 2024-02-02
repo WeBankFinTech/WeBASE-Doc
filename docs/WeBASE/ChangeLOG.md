@@ -7,6 +7,20 @@
     FISCO-BCOS 2.0与3.0对比、JDK版本、WeBASE及其他子系统的版本兼容说明！`请查看 <https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/compatibility.html>`_
 ```
 
+
+### WeBASE v3.1.1
+
+WeBASE v3.1.1 版本支持 FISCO-BCOS 3.0.0及以上版本。WeBASE 子系统推荐使用下表的版本搭配，FISCO-BCOS 推荐使用 [FISCO BCOS v3.5.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.5.0)版本。
+
+| WeBASE子系统名称                                             | 配套版本地址                                                 | FISCO-BCOS 2.X.X                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [节点前置服务](https://webasedoc.readthedocs.io/zh_CN/lab/docs/WeBASE-Front/index.html) | [WeBASE-Front Release v3.1.1](https://github.com/WeBankBlockchain/WeBASE-Front/releases/tag/v3.1.1) | [FISCO BCOS v3.2.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.2.0) |
+| [节点管理服务](https://webasedoc.readthedocs.io/zh_CN/lab/docs/WeBASE-Node-Manager/index.html) | [WeBASE-Node-Manager Release v3.1.1](https://github.com/WeBankBlockchain/WeBASE-Node-Manager/releases/tag/v3.1.1) | [FISCO BCOS v3.5.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.5.0) |
+| [WeBASE管理平台](https://webasedoc.readthedocs.io/zh_CN/lab/docs/WeBASE-Web/index.html) | [WeBASE-Web Release v3.1.1](https://github.com/WeBankBlockchain/WeBASE-Web/releases/tag/v3.1.1) | [FISCO BCOS v3.5.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.5.0) |
+| [签名服务](https://webasedoc.readthedocs.io/zh_CN/lab/docs/WeBASE-Sign/index.html) | [WeBASE-Sign Release v3.1.1](https://github.com/WeBankBlockchain/WeBASE-Sign/releases/tag/v3.1.1) | [FISCO BCOS v3.5.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.5.0) |
+
+
+
 ### WeBASE v3.1.0
 
 WeBASE v3.1.0 版本支持 FISCO-BCOS 3.0.0及以上版本。WeBASE 子系统推荐使用下表的版本搭配，FISCO-BCOS 推荐使用 [FISCO BCOS v3.4.0](https://github.com/FISCO-BCOS/FISCO-BCOS/releases/tag/v3.4.0)版本。

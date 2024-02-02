@@ -29,7 +29,7 @@
 
 1. 下载安装包
     ```shell
-    wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.0/webase-front.zip
+    wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.1/webase-front.zip
     ```
 
 

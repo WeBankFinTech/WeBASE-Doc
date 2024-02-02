@@ -100,7 +100,7 @@ Python3.6及以上版本，需安装`PyMySQL`依赖包
 
 获取部署安装包：
 ```shell
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.0/webase-deploy.zip
+wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.1/webase-deploy.zip
 ```
 解压安装包：
 ```shell
@@ -139,10 +139,10 @@ cd webase-deploy
 ```shell
 [common]
 # WeBASE子系统的最新版本（v3.0版本）
-webase.web.version=v3.1.0
-webase.mgr.version=v3.1.0
-webase.sign.version=v3.0.2
-webase.front.version=v3.1.0
+webase.web.version=v3.1.1
+webase.mgr.version=v3.1.1
+webase.sign.version=v3.1.1
+webase.front.version=v3.1.1
 
 # 节点管理子系统mysql数据库配置
 mysql.ip=localhost
@@ -184,17 +184,17 @@ node.p2pPort=30300
 # 节点rpc端口
 node.rpcPort=20200
 # FISCO-BCOS版本（v3.0.0或以上版本）
-fisco.version=v3.4.0
+fisco.version=v3.5.0
 # 搭建节点个数（默认两个）
 node.counts=nodeCounts
 # 是否搭建Liquid合约链（Solidity和Liquid合约需要二选一，默认Solidity
 # 如果使用Liquid，要求在webase-front所在主机配置Liquid环境才能在WeBASE中编译合约
 # [0: solidity, 1: liquid]
 fisco.wasm=0
-# 是否启用链的权限管理，默认不启用
+# 是否启用链的权限管理，FISCO BCOS >=3.3.0后默认启用
 # 如果启用权限，一键部署自动在'webase-deploy/nodes/ca'目录生成一个随机的管理员私钥（包含国密与非国密）
 # [0: disabled, 1: enable]
-fisco.auth=0
+fisco.auth=1
 
 # 使用已有链时需配置[if.exist.fisco=yes]
 # 已有链节点rpc端口列表
