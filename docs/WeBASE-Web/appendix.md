@@ -80,7 +80,8 @@ ps -ef | grep nginx                              # 查看nginx进程
 
 * 重启服务后，检查日志文件 `log/WeBASE-Node-Manager.log`。
     * 检查是否有异常信息。如果有异常信息，根据具体的异常信息检查环境配置，或者通过搜索引擎进行排查。
-
+* 使用了高版本的MySql和JAVA可能会导致在日志中报错`java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed`需要在`webase-node-mgr/conf/application.yml`和`webase-sign/conf/application.yml`中的`url: jdbc:mysql://localhost:3306/webasenodemanager?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull`
+后面加上`&useSSL=false&allowPublicKeyRetrieval=true`来禁止权限验证
 #### 2.3 为什么输入正确的验证码显示验证码错误
 登录验证码有效时间为五分钟，五分钟后验证码失效，登录会出现“验证码错误” 。
 
