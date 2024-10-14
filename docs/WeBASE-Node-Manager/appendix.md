@@ -107,6 +107,14 @@ ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (110)
 GRANT ALL PRIVILEGES ON *.* TO 'TestUser'@'%' IDENTIFIED BY '此处为TestUser的密码’' WITH GRANT OPTION;
 ```
 
+* 问：使用Mysql 8.0以上版本，服务连接DB报错
+* <span id="mysql8"></span>
+
+答：MySQL 8.0 默认情况下是要求使用 SSL 来建立连接的。在 MySQL 8.0 之前的版本中，SSL 连接是可选的，但在 MySQL 8.0 及更高版本中，如果未启用 SSL，则连接可能会被拒绝。需要修改conf/application.yml中的`spring.datasource.url`的值，在结尾加上`&useSSL=false`
+```
+url: jdbc:mysql://127.0.0.1:3306/webasenodemanager?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+```
+
 ##### WeBASE-Node-Manager服务搭建问题
 * 问：执行构建命令`gradle build -x test`抛出异常：
 ```

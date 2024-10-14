@@ -21,13 +21,13 @@ WeBASE每个新版本发布后，会在[WeBASELargefiles](https://github.com/WeB
 
 同时提供以下国内镜像，**可加速下载安装包**：
 ```Bash
-https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/{release_version}/webase-{subsystem}.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/{release_version}/webase-{subsystem}.zip
 ```
 其中`{release_version}`为`v1.x.x`格式，`{subsystem}`则是子系统名字。
 
 支持下载`sign, front, node-mgr, web`子系统的zip安装包（全小写），暂不支持webase-transaction的安装包下载。
 
-*注：可视化部署中通过国内镜像手动下载docker镜像，文件名则是`docker-fisco-webase.tar`或国密版`docker-fisco-webase-gm.tar`*
+*注：可视化部署中通过国内镜像手动下载docker镜像，文件名则是`docker-fisco-webase.tar`*
 
 ## WeBASE文档镜像
 
@@ -43,10 +43,10 @@ WeBASE文档使用readthedocs管理，全部开源于[https://webasedoc.readthed
 
 ```bash
 # 使用CDN下载
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.0/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-deploy.zip
 
 # 使用github下载
-wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.0/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-deploy.zip
 ```
 
 
@@ -59,9 +59,9 @@ WeBASE一键部署(webase-deploy)会自动下载子系统安装包，用户也�
 - 获取WeBASE-Node-Manager v1.4.1的安装包`webase-node-mgr.zip`
 
 ```
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.4.1/webase-node-mgr.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-front.zip
 // 或
-curl -#LO https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.4.1/webase-node-mgr.zip
+curl -#LO https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-front.zip
 ```
 
 ### 单独下载WeBASE的solc JS文件
@@ -73,9 +73,9 @@ WeBASE提供FISCO BCOS中使用的v0.4.25, v0.5.2, v0.6.10三个版本的solc JS
 - 获取v0.4.25的国密版本solc JS编译文件
 
 ```
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js
 // 或
-curl -#LO https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js
+curl -#LO https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js
 ```
 
 

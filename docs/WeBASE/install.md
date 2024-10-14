@@ -104,8 +104,15 @@ Python3.6及以上版本，需安装`PyMySQL`依赖包
 
 获取部署安装包：
 ```shell
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.5/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-deploy.zip
+
+# 网络访问失败，则可以尝试直接git clone WeBASE的仓库
+# 其中deploy目录即webase-deploy的目录
+git clone https://github.com/WeBankBlockchain/WeBASE.git
+# 若因网络问题导致长时间下载失败，可尝试以下命令
+git clone https://gitee.com/WeBank/WeBASE.git
 ```
+
 解压安装包：
 ```shell
 unzip webase-deploy.zip
@@ -220,7 +227,7 @@ node.dir=node0
 
 # 搭建新链时需配置
 # FISCO-BCOS版本
-fisco.version=2.9.1
+fisco.version=v2.11.0
 # 搭建节点个数（默认两个）
 node.counts=nodeCounts
 ```

@@ -38,12 +38,12 @@ cd WeBASE-Web
 
 `注意：当且仅当get_solc_js.sh脚本执行失败才需要执行下面的命令`
 ```
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25.js -o ./dist/static/js/v0.4.25.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js -o ./dist/static/js/v0.4.25-gm.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.5.2.js -o ./dist/static/js/v0.5.2.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.5.2-gm.js -o ./dist/static/js/v0.5.2-gm.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.6.10.js -o ./dist/static/js/v0.6.10.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.6.10-gm.js -o ./dist/static/js/v0.6.10-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25.js -o ./dist/static/js/v0.4.25.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js -o ./dist/static/js/v0.4.25-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.5.2.js -o ./dist/static/js/v0.5.2.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.5.2-gm.js -o ./dist/static/js/v0.5.2-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.6.10.js -o ./dist/static/js/v0.6.10.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.6.10-gm.js -o ./dist/static/js/v0.6.10-gm.js
 ```
 
 执行完后检查dist/static/js是否下载完这些js文件。

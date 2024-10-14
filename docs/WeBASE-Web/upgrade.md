@@ -53,7 +53,7 @@ WeBASE-Web升级的必须步骤：
 - 需要将已有的webase-node-mgr的ip port及webase-web的port配置到新的nginx.conf文件中，使用nginx重载配置文件
 
 新增内容如下
-- 需要启用移动端时，则需要下载移动端的webase-web-mobile.zip安装包并解压，即`wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.0/webase-web-mobile.zip`，并解压`unzip webase-web-mobile.zip`
+- 需要启用移动端时，则需要下载移动端的webase-web-mobile.zip安装包并解压，即`wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.5/webase-web-mobile.zip`，并解压`unzip webase-web-mobile.zip`
 - 在nginx.conf中的`location /`中的`phone_page_url`替换为`webase-web-mobile`解压后的路径(已有的`root web_page_url`无需修改)
 - 最后使用`nginx -s reload`重载新的nginx配置文件
 ```
