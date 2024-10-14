@@ -19,21 +19,8 @@ WeBASE每个新版本发布后，会在[WeBASELargefiles](https://github.com/WeB
 
 其中WeBASELargefiles提供webase-deploy一键部署工具（即WeBASE源码中`/deploy`文件夹），以及webase-front.zip, webase-node-mgr.zip, webase-sign.zip, webase-web.zip子系统的安装包。
 
-同时提供以下国内镜像，**可加速下载安装包**：
-```Bash
-https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/{release_version}/webase-{subsystem}.zip
-```
-其中`{release_version}`为`v1.x.x`格式，`{subsystem}`则是子系统名字。
+若github的访问速度较慢，可以对应地访问[WeBASELargefiles gitee](https://gitee.com/WeBank/WeBASELargefiles/releases)
 
-支持下载`sign, front, node-mgr, web`子系统的zip安装包（全小写），暂不支持webase-transaction的安装包下载。
-
-*注：可视化部署中通过国内镜像手动下载docker镜像，文件名则是`docker-fisco-webase.tar`或国密版`docker-fisco-webase-gm.tar`*
-
-## WeBASE文档镜像
-
-WeBASE文档使用readthedocs管理，全部开源于[https://webasedoc.readthedocs.io/zh_CN/lab/index.html](https://webasedoc.readthedocs.io/zh_CN/lab/index.html)，同样提供国内镜像文档[https://fintech.webank.com/developer/docs/webase/index.html](https://fintech.webank.com/developer/docs/webase/index.html)，*由于网站资源更新周期安排，国内镜像文档更新会比readthedocs有所延迟*。
-
-每个版本发布会为上个版本的文档打Tag，新版本的文档会合入主干分支，文档由于会持续改进，所以是下个版本发布才打上个版本的tag。readthedocs文档支持下载PDF格式，方便用户使用。
 
 ## 举例：使用国内镜像进行一键部署
 
@@ -43,10 +30,10 @@ WeBASE文档使用readthedocs管理，全部开源于[https://webasedoc.readthed
 
 ```bash
 # 使用CDN下载
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.5.0/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-deploy.zip
 
 # 使用github下载
-wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v1.5.0/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-deploy.zip
 ```
 
 
@@ -59,23 +46,23 @@ WeBASE一键部署(webase-deploy)会自动下载子系统安装包，用户也�
 - 获取WeBASE-Node-Manager v1.4.1的安装包`webase-node-mgr.zip`
 
 ```
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.4.1/webase-node-mgr.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-front.zip
 // 或
-curl -#LO https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v1.4.1/webase-node-mgr.zip
+curl -#LO https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-front.zip
 ```
 
 ### 单独下载WeBASE的solc JS文件
 
-WeBASE提供FISCO BCOS中使用的v0.4.25, v0.5.2, v0.6.10三个版本的solc JS编译文件，对应的国密版本则在版本号后加上`-gm`后缀
+WeBASE提供FISCO BCOS中使用的v0.4.25, v0.5.2, v0.6.10, v0.8.11 四个版本的solc JS编译文件，对应的国密版本则在版本号后加上`-gm`后缀
 
 如需手动下载某一版本的的安装包，可以直接通过`wget`或者`curl -O`命令直接获取安装包。比如：
 
 - 获取v0.4.25的国密版本solc JS编译文件
 
 ```
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js
 // 或
-curl -#LO https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js
+curl -#LO https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js
 ```
 
 

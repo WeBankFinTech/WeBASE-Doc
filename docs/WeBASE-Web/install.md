@@ -42,19 +42,19 @@ WeBASE-Web v3.0.1已支持solidity `v0.8.11`
 
 - 如果执行不成功，请使用下面的命令：
 
-`注意：当且仅当get_solc_js.sh脚本执行失败才需要执行下面的命令`
+`注意：当且仅当get_solc_js.sh脚本执行失败才需要执行下面的命令`  
 ```
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25.js -o ./dist/static/js/v0.4.25.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.4.25-gm.js -o ./dist/static/js/v0.4.25-gm.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.5.2.js -o ./dist/static/js/v0.5.2.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.5.2-gm.js -o ./dist/static/js/v0.5.2-gm.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.6.10.js -o ./dist/static/js/v0.6.10.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.6.10-gm.js -o ./dist/static/js/v0.6.10-gm.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.8.11.js -o ./dist/static/js/v0.8.11.js
-    curl -#L https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/download/solidity/wasm/v0.8.11-gm.js -o ./dist/static/js/v0.8.11-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25.js -o ./dist/static/js/v0.4.25.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.4.25-gm.js -o ./dist/static/js/v0.4.25-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.5.2.js -o ./dist/static/js/v0.5.2.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.5.2-gm.js -o ./dist/static/js/v0.5.2-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.6.10.js -o ./dist/static/js/v0.6.10.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.6.10-gm.js -o ./dist/static/js/v0.6.10-gm.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.8.11.js -o ./dist/static/js/v0.8.11.js
+    curl -#L https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.0.0/v0.8.11-gm.js -o ./dist/static/js/v0.8.11-gm.js
 ```
 
-执行完后检查dist/static/js是否下载完这些js文件。
+执行完后检查dist/static/js是否下载完这些js文件，文件大小在5m-20m之间。
 
 
 ### 4. 修改配置

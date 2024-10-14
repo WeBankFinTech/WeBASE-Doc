@@ -100,7 +100,14 @@ Python3.6及以上版本，需安装`PyMySQL`依赖包
 
 获取部署安装包：
 ```shell
-wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.1/webase-deploy.zip
+wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-deploy.zip
+
+# 网络访问失败，则可以尝试直接git clone WeBASE的仓库
+# 其中仓库根目录下的deploy目录即webase-deploy目录
+git clone -b master-3.0 https://github.com/WeBankBlockchain/WeBASE.git
+# 若因网络问题导致长时间下载失败，可尝试以下命令
+git clone -b master-3.0 https://gitee.com/WeBank/WeBASE.git
+
 ```
 解压安装包：
 ```shell
@@ -184,17 +191,13 @@ node.p2pPort=30300
 # 节点rpc端口
 node.rpcPort=20200
 # FISCO-BCOS版本（v3.0.0或以上版本）
-fisco.version=v3.5.0
+fisco.version=v3.11.0
 # 搭建节点个数（默认两个）
 node.counts=nodeCounts
 # 是否搭建Liquid合约链（Solidity和Liquid合约需要二选一，默认Solidity
 # 如果使用Liquid，要求在webase-front所在主机配置Liquid环境才能在WeBASE中编译合约
 # [0: solidity, 1: liquid]
 fisco.wasm=0
-# 是否启用链的权限管理，FISCO BCOS >=3.3.0后默认启用
-# 如果启用权限，一键部署自动在'webase-deploy/nodes/ca'目录生成一个随机的管理员私钥（包含国密与非国密）
-# [0: disabled, 1: enable]
-fisco.auth=1
 
 # 使用已有链时需配置[if.exist.fisco=yes]
 # 已有链节点rpc端口列表

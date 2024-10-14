@@ -29,7 +29,13 @@
 
 1. 下载安装包
     ```shell
-    wget https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/WeBASE/releases/download/v3.1.1/webase-front.zip
+    wget https://github.com/WeBankBlockchain/WeBASELargeFiles/releases/download/v3.1.1/webase-front.zip
+
+    # 网络访问失败，则可以尝试直接git clone WeBASE-Front的仓库，构建方法可参考节点前置部署文档
+    git clone -b master-3.0 https://github.com/WeBankBlockchain/WeBASE-Front.git
+    # 若因网络问题导致长时间下载失败，可尝试以下命令
+    git clone -b master-3.0 https://gitee.com/WeBank/WeBASE-Front.git
+
     ```
 
 
